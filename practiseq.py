@@ -28,11 +28,11 @@ def get_vext_data(topic):
 
 st.title("PRACTICE GPT✨")
 
-topic = st.text_input('Enter topic')
+topic = st.text_input('Enter Any Topic Of Your Choice ')
 
-if st.button("Enter"):
+if st.button("Enter To Generate MCQs"):
     if topic:
-        with st.spinner('Fetching data ...'):
+        with st.spinner('Generating data ...'):
             data = get_vext_data(topic)
             if "error" in data:
                 st.error(data["error"])
