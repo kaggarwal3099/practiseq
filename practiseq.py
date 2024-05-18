@@ -26,7 +26,7 @@ def get_vext_data(topic):
     except requests.exceptions.RequestException as req_err:
         return {"error": f"An error occurred: {req_err}"}
 
-st.title("PRACTICE QUESTIONS")
+st.title("PRACTICE GPT✨")
 
 topic = st.text_input('Enter topic')
 
